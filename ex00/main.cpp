@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 17:49:15 by bolcay            #+#    #+#             */
-/*   Updated: 2025/11/04 18:05:32 by bolcay           ###   ########.fr       */
+/*   Updated: 2025/11/04 20:10:46 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int main()
 {
-    Zombie *news;
+    Zombie *newz;
     
-    randomChump("bhen");
-    news = newZombie("shen");
-    delete news;
+    randomChump("yo mama");
+    newz = newZombie("yo mama but fatter");
+    delete newz;
     return (0);
 }

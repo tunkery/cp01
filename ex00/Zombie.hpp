@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 17:40:06 by bolcay            #+#    #+#             */
-/*   Updated: 2025/11/04 18:04:07 by bolcay           ###   ########.fr       */
+/*   Updated: 2025/11/04 20:12:10 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,9 @@ class Zombie
         Zombie( std::string n )
         {
             name = n;
-            std::cout << n << ": BraiiiiiiinnnzzzZ..." << std::endl;
+            // std::cout << n << ": BraiiiiiiinnnzzzZ..." << std::endl;
         }
+        void	announce( void );
 };
 
 void    randomChump( std::string name);
