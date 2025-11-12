@@ -1,5 +1,5 @@
 SRCS = main.cpp
-OBJS = $(SRCS=.cpp=.o)
+OBJS = $(SRCS:.cpp=.o)
 NAME = Zombie
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
@@ -9,7 +9,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
-%.o: %.c
+%.o: %.cpp
 	$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	$(RM) $(OBJS)
