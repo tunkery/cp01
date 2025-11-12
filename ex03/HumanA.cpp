@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:48:22 by bolcay            #+#    #+#             */
-/*   Updated: 2025/11/12 11:09:07 by bolcay           ###   ########.fr       */
+/*   Updated: 2025/11/12 12:24:18 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,4 +14,5 @@
 
 void    HumanA::attack()
 {
+	std::cout << name << ": attacks with their " << std::endl;
 }
