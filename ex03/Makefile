@@ -1,8 +1,8 @@
-SRCS = main.cpp
+SRCS = main.cpp HumanA.cpp HumanB.cpp Weapon.cpp
 OBJS = $(SRCS:.cpp=.o)
-NAME = Zombie
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
+NAME = Zombie
 RM = rm -f
 
 all: $(NAME)
