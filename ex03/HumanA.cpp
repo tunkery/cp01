@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   HumanA.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
+/*   By: batuhan <batuhan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:48:22 by bolcay            #+#    #+#             */
-/*   Updated: 2025/11/12 12:24:18 by bolcay           ###   ########.fr       */
+/*   Updated: 2025/12/02 16:45:06 by batuhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,6 @@
 
 void    HumanA::attack()
 {
-	std::cout << name << ": attacks with their " << std::endl;
+	std::cout << name << ": attacks with their "
+			  << type->getType() << std::endl;
 }

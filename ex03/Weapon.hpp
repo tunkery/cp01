@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
+/*   By: batuhan <batuhan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:46:25 by bolcay            #+#    #+#             */
-/*   Updated: 2025/11/12 12:36:55 by bolcay           ###   ########.fr       */
+/*   Updated: 2025/12/02 16:08:21 by batuhan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Weapon
 		{
 			type = n;
 		}
-    	const std::string &getType(std::string n);
+    	const std::string &getType( void );
 		void	setType(std::string n);
 };
 

@@ -2,3 +2,5 @@ Change the names in ex00
 
 need to free ex01
 
+might need to check memory leaks ex03
+
