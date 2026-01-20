@@ -6,14 +6,14 @@
 #    By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/19 14:13:17 by bolcay            #+#    #+#              #
-#    Updated: 2026/01/19 15:35:14 by bolcay           ###   ########.fr        #
+#    Updated: 2026/01/20 12:18:11 by bolcay           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=c++98
+CFLAGS = -std=c++98
 RM = rm -f
 NAME = Sed
 
