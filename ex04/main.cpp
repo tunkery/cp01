@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:23:43 by bolcay            #+#    #+#             */
-/*   Updated: 2026/01/21 13:21:05 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/01/21 17:37:48 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,25 +27,34 @@ std::size_t	findit(std::string fn, std::string s1, std::string s2)
 	std::size_t	j = 0;
 
 	found = fn.find(s1);
-	std::cout << found << std::endl;
+	// std::cout << found << std::endl;
 	if (found != 0)
 	{
 		str = fn.substr(0, found);
 		str += s2;
 	}
-	std::cout << str << std::endl;
+	// std::cout << str << std::endl;
 	i = found;
 	i += size1;
-	while (j != 2)
+	while (found < 1844674407370)
+	{
+		found = fn.find(s1, i);
+		i = found;
+		i += size1;
+		j++;
+	}
+	while (j > 0)
 	{
 		found = fn.find(s1, i);
 		str.append(fn, i, (found - i));
 		str += s2;
 		i = found;
 		i += size1;
-		j++;
+		j--;
 		// doit(fn, s2, str, found);
 	}
+	str.append(fn, i, (found - i));
+	// std::cout << found << std::endl;
 	std::cout << str << std::endl;
 	return (found);
 }
@@ -56,16 +65,33 @@ int	main(int ac, char **av)
 	std::string s2;
 	std::string fn;
 	std::size_t	here;
+	std::string	line;
+	std::ifstream f (av[1]);
 	
-	// if (ac < 4)
+	if (ac < 4)
+	{
+		std::cout << "The parameters can't be left empty" << std::endl;
+		return (0);
+	}
+	if (!f.is_open())
+	{
+		std::cout << "File can't be opened" << std::endl;
+		return (1);
+	}
+	// while (1)
 	// {
-	// 	std::cout << "The parameters can't be left empty" << std::endl;
-	// 	return (0);
+	// 	if (!std::getline(f, fn))
+	// 		break ;
 	// }
-	// fn = av[1];
-	// s1 = av[2];
-	// s2 = av[3];
-	here = findit("abcdefgehjklmeno", "e", "F");
-	std::cout << here << std::endl;
+	while (std::getline(f, fn, '\0'))
+	{
+		// std::cout << fn << std::endl;
+	}
+	// std::cout << fn << std::endl;
+	s1 = av[2];
+	s2 = av[3];
+	here = findit(fn, s1, s2);
+	f.close();
+	// std::cout << fn << std::endl;
 	return (0);
 }
