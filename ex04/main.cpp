@@ -6,16 +6,11 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:23:43 by bolcay            #+#    #+#             */
-/*   Updated: 2026/01/21 17:37:48 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/01/22 12:31:51 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sed.hpp"
-
-std::string	doit(std::string fn, std::string s2, std::string str, std::size_t found)
-{
-	return (0);
-}
 
 std::size_t	findit(std::string fn, std::string s1, std::string s2)
 {
@@ -27,13 +22,6 @@ std::size_t	findit(std::string fn, std::string s1, std::string s2)
 	std::size_t	j = 0;
 
 	found = fn.find(s1);
-	// std::cout << found << std::endl;
-	if (found != 0)
-	{
-		str = fn.substr(0, found);
-		str += s2;
-	}
-	// std::cout << str << std::endl;
 	i = found;
 	i += size1;
 	while (found < 1844674407370)
@@ -51,11 +39,12 @@ std::size_t	findit(std::string fn, std::string s1, std::string s2)
 		i = found;
 		i += size1;
 		j--;
-		// doit(fn, s2, str, found);
 	}
 	str.append(fn, i, (found - i));
-	// std::cout << found << std::endl;
-	std::cout << str << std::endl;
+	std::ofstream newfile("new.txt");
+	newfile << str;
+	newfile.close();
+	// std::cout << str << std::endl;
 	return (found);
 }
 
@@ -78,20 +67,14 @@ int	main(int ac, char **av)
 		std::cout << "File can't be opened" << std::endl;
 		return (1);
 	}
-	// while (1)
-	// {
-	// 	if (!std::getline(f, fn))
-	// 		break ;
-	// }
-	while (std::getline(f, fn, '\0'))
+	while (1)
 	{
-		// std::cout << fn << std::endl;
+		if (!std::getline(f, fn, '\0'))
+			break ;
 	}
-	// std::cout << fn << std::endl;
 	s1 = av[2];
 	s2 = av[3];
 	here = findit(fn, s1, s2);
 	f.close();
-	// std::cout << fn << std::endl;
 	return (0);
 }
