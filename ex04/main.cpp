@@ -6,13 +6,13 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 12:23:43 by bolcay            #+#    #+#             */
-/*   Updated: 2026/01/22 12:31:51 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/01/22 14:46:49 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Sed.hpp"
 
-std::size_t	findit(std::string fn, std::string s1, std::string s2)
+std::size_t	findit(std::string nm, std::string fn, std::string s1, std::string s2)
 {
 	std::size_t found = 1;
 	std::string str;
@@ -20,6 +20,7 @@ std::size_t	findit(std::string fn, std::string s1, std::string s2)
 	std::size_t size2 = s2.size();
 	std::size_t	i;
 	std::size_t	j = 0;
+	std::string	file_name;
 
 	found = fn.find(s1);
 	i = found;
@@ -41,7 +42,9 @@ std::size_t	findit(std::string fn, std::string s1, std::string s2)
 		j--;
 	}
 	str.append(fn, i, (found - i));
-	std::ofstream newfile("new.txt");
+	file_name = nm;
+	file_name += ".replace";
+	std::ofstream newfile(file_name);
 	newfile << str;
 	newfile.close();
 	// std::cout << str << std::endl;
@@ -74,7 +77,7 @@ int	main(int ac, char **av)
 	}
 	s1 = av[2];
 	s2 = av[3];
-	here = findit(fn, s1, s2);
+	here = findit(av[1], fn, s1, s2);
 	f.close();
 	return (0);
 }
