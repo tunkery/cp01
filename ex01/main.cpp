@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 20:23:30 by bolcay            #+#    #+#             */
-/*   Updated: 2025/11/04 21:07:13 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/05 13:30:33 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,6 @@ int main(int ac, char **av)
     }
     number = std::atoi(av[1]);
     newz = zombieHorde(number, av[2]);
+    delete [] newz;
     return (0);
 }

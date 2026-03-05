@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 17:40:06 by bolcay            #+#    #+#             */
-/*   Updated: 2025/11/04 20:12:10 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/05 13:22:27 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,14 +23,7 @@ class Zombie
         std::string name;
     
     public:
-        Zombie( void )
-        {
-        }
-        Zombie( std::string n )
-        {
-            name = n;
-            // std::cout << n << ": BraiiiiiiinnnzzzZ..." << std::endl;
-        }
+        Zombie( std::string n );
         void	announce( void );
 };
 

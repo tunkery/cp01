@@ -1,0 +1,14 @@
+s1'in boyutu + 1/2/3 yapip gnl gibi bufferda o karakter boyunca bakariz.
+
+eger s1'in boyu kucukse onun yerine set bir value'muz olabilir mesela 5 gibi.
+
+gnl gibi yeni bir stringe s1 i gorene kadar kopya yapariz. s1'i gorursek onun yerine s2'yi yapistiririz.
+
+
+peki ya ilk 10 karakterde diyelim o seyin sadece yarisi var ve diger yarisi diger 10 karakterde?
+o zaman napicaz? 
+
+okey ilk once bir stringde s1 karakterini bulan bir function yapalim.
+
+teorik olarak bu while loop bana o karakterin her ciktigi yeri gosterebilir ve simdi 
+her loopta yeni stringe s1 in oldugu yerleri s2 ile replace yapmamiz lazim. 
