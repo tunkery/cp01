@@ -6,11 +6,11 @@
 #    By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/22 12:37:58 by bolcay            #+#    #+#              #
-#    Updated: 2026/01/22 12:42:10 by bolcay           ###   ########.fr        #
+#    Updated: 2026/03/10 15:39:58 by bolcay           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS = main.cpp
+SRCS = main.cpp Harl.cpp
 OBJS = $(SRCS:.cpp=.o)
 CC = c++
 CFLAGS = -std=c++98
@@ -21,7 +21,7 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) -o $(NAME)
-%.o: %.c
+%.o: %.c Harl.hpp
 	$(CC) $(CFLAGS) -c $< -o $@
 clean:
 	$(RM) $(OBJS)

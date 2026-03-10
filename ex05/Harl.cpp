@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 15:46:25 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/10 15:14:18 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/10 15:52:26 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,18 @@
 void	Harl::complain( std::string level)
 {
 	void	(Harl::*array[])(void) = { &Harl::debug, &Harl::info, &Harl::warning, &Harl::error };
+	int		i = 0;
+	std::string	s[] = { "DEBUG", "INFO", "WARNING", "ERROR"};
+
+	while (i < 4)
+	{
+		if (level == s[i])
+		{
+			array[i];
+			std::cout << "found it! i = " << i << std::endl;
+		}
+		i++;
+	}
 }
 
 void	Harl::debug( void )
