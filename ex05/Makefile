@@ -6,14 +6,14 @@
 #    By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/22 12:37:58 by bolcay            #+#    #+#              #
-#    Updated: 2026/03/10 15:39:58 by bolcay           ###   ########.fr        #
+#    Updated: 2026/03/10 16:04:33 by bolcay           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SRCS = main.cpp Harl.cpp
 OBJS = $(SRCS:.cpp=.o)
 CC = c++
-CFLAGS = -std=c++98
+CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
 NAME = Harl
 

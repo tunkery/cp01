@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 15:46:25 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/10 15:52:26 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/10 16:04:41 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ void	Harl::complain( std::string level)
 	{
 		if (level == s[i])
 		{
-			array[i];
-			std::cout << "found it! i = " << i << std::endl;
+			(this->*array[i])();
+			return ;
 		}
 		i++;
 	}

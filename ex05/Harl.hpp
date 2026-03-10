@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/22 12:43:32 by bolcay            #+#    #+#             */
-/*   Updated: 2026/01/27 15:50:54 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/10 16:04:53 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,5 @@ class Harl
 	public:
 		void	complain( std::string level);
 };
-
-
 
 #endif
