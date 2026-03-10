@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/04 17:40:06 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/05 13:22:27 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/09 14:54:12 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ class Zombie
         void	announce( void );
 };
 
-void    randomChump( std::string name);
-Zombie *newZombie( std::string name);
+void    randomChump( std::string name );
+Zombie *newZombie( std::string name );
 
 #endif
