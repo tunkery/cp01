@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/10 16:06:33 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/10 16:08:02 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/10 16:11:57 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,27 @@ void	Harl::complain( std::string level)
 	while (i < 4)
 	{
 		if (level == s[i])
-		{
-			(this->*array[i])();
-			return ;
-		}
+			break ;
 		i++;
+	}
+	switch (i)
+	{
+		case 0:
+			while (i < 4)
+				(this->*array[i++])();
+			break ;
+		case 1:
+			while (i < 4)
+				(this->*array[i++])();
+			break ;
+		case 2:
+			while (i < 4)
+				(this->*array[i++])();
+			break ;
+		case 3:
+			while (i < 4)
+				(this->*array[i++])();
+			break ;
 	}
 }
 

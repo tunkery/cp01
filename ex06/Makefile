@@ -6,7 +6,7 @@
 #    By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/10 16:07:05 by bolcay            #+#    #+#              #
-#    Updated: 2026/03/10 16:07:15 by bolcay           ###   ########.fr        #
+#    Updated: 2026/03/10 16:12:28 by bolcay           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ OBJS = $(SRCS:.cpp=.o)
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98
 RM = rm -f
-NAME = Harl
+NAME = harlFilter
 
 all: $(NAME)
 
