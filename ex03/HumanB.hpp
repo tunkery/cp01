@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:47:59 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/09 16:56:53 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/12 19:38:17 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ class HumanB
 {
     private:
         std::string name;
-        Weapon      type;
+        Weapon      *type;
     public:
-        HumanB(std::string n);
+        HumanB(std::string n) : name(n), type(NULL) {};
 		void	attack();
         void    setWeapon(Weapon typeA);
 };

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: batuhan <batuhan@student.42.fr>            +#+  +:+       +#+        */
+/*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:46:25 by bolcay            #+#    #+#             */
-/*   Updated: 2025/12/02 16:08:21 by batuhan          ###   ########.fr       */
+/*   Updated: 2026/03/12 20:07:37 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,7 @@ class Weapon
     public:
 		Weapon()
 		{}
-		Weapon(std::string n)
-		{
-			type = n;
-		}
+		Weapon(std::string n) : type(n) {};
     	const std::string &getType( void );
 		void	setType(std::string n);
 };

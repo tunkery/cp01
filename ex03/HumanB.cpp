@@ -6,24 +6,27 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:48:31 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/09 16:56:08 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/12 20:13:08 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string n)
-{
-    name = n;
-}
+// HumanB::HumanB(std::string n)
+// {
+//     name = n;
+// }
 
 void	HumanB::setWeapon(Weapon typeA)
 {
+	type = new(Weapon);
 	type = &typeA;
 }
 
 void    HumanB::attack()
 {
+	// std::string s = type->getType();
+	// std::string *c = &s;
 	std::cout << name << ": attacks with their "
 			  << type->getType() << std::endl;
 }
