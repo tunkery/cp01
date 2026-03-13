@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:47:18 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/12 20:18:46 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/13 21:07:28 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,5 @@ const std::string &Weapon::getType( void )
 
 void	Weapon::setType(std::string n)
 {
-	const std::string &s = Weapon::getType();
-	const std::string *c = &s;
-    type = *c;
+    type = n;
 }

@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:48:31 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/12 20:13:08 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/13 21:07:11 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,11 @@
 
 void	HumanB::setWeapon(Weapon typeA)
 {
-	type = new(Weapon);
 	type = &typeA;
 }
 
 void    HumanB::attack()
 {
-	// std::string s = type->getType();
-	// std::string *c = &s;
 	std::cout << name << ": attacks with their "
 			  << type->getType() << std::endl;
 }
