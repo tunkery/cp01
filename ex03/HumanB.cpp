@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:48:31 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/13 21:07:11 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/13 21:15:06 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //     name = n;
 // }
 
-void	HumanB::setWeapon(Weapon typeA)
+void	HumanB::setWeapon(Weapon &typeA)
 {
 	type = &typeA;
 }

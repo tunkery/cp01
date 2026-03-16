@@ -6,7 +6,7 @@
 /*   By: bolcay <bolcay@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/12 10:47:28 by bolcay            #+#    #+#             */
-/*   Updated: 2026/03/12 19:19:59 by bolcay           ###   ########.fr       */
+/*   Updated: 2026/03/13 21:14:23 by bolcay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class HumanA
         std::string	name;
         Weapon		&type;
     public:
-		HumanA(std::string n, Weapon typeA) : name(n), type(typeA) {};
+		HumanA(std::string n, Weapon &typeA) : name(n), type(typeA) {};
 		void	attack();
 };
 
